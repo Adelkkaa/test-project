@@ -1,0 +1,19 @@
+.list-wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.list-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.list {
+  padding: 16px;
+
+  & > li:not(:last-child) {
+    margin-top: 8px;
+  }
+}

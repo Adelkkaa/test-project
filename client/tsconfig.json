@@ -22,7 +22,11 @@
     "strictNullChecks": true,
     "jsx": "react-jsx",
     "skipLibCheck": true,
-    "stripInternal": true
+    "stripInternal": true,
+    "baseUrl": ".",
+      "paths": {
+        "@/*": ["src/*"]
+      }
   },
   "include": [
     "src/**/*.ts",

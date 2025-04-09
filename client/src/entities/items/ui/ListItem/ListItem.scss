@@ -1,0 +1,36 @@
+.list-item {
+    background-color: #dcdbdb;
+    border-radius: 8px;
+  
+    & > a {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+    }
+  
+    * {
+      text-decoration: none;
+      color: black;
+    }
+  
+    &.active {
+      background-color: #dfbbbb;
+    }
+  
+    &:hover {
+      background-color: #d3c5c5;
+    }
+  }
+  
+  .list-item__description {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .list-item-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
